@@ -147,6 +147,16 @@ body {
 .features .feature-item p {
     font-size: 16px;
 }
+@media (max-width: 988px) {
+   
+    .auth-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+}
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
