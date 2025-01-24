@@ -158,7 +158,13 @@ margin-left: 350px;
 .features .feature-item p {
     font-size: 16px;
 }
-
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
 
 
 
@@ -201,7 +207,7 @@ margin-left: 350px;
     .auth-buttons {
         display: flex;
         flex-direction: column;
-        margin-top: 40px;
+        margin-top: 30px;
         gap: 30px;
     }
     .auth-buttons a {
@@ -216,29 +222,41 @@ margin-left: 350px;
         width: 100%;
     }
     .specialone {
-        width: 70%;
+        width: auto;
     }
     .special{
         margin-left: 10px;
-        width: 80%;
+        width: auto;
     }
     .lines img{
         display: none; 
     }
 }
 @media (max-width: 480px) {
+    .hamflex{
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+        align-items: center;
+    }
     .header {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 70%;
-        margin-left: 100px;
+        display: flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: center;
+        width: 90%;
     }
 
+    .hamburger {
+        display: block;
+      }
+   
     .nav {
         flex-direction: column;
         gap: 30px;
         margin:10px;
-        width: 30%;
+        width: 60%;
+        display: none;
     }
 
     .nav a {
@@ -246,7 +264,7 @@ margin-left: 350px;
     }
 
     .auth-buttons {
-        display: flex;
+        display: none;
         flex-direction: column;
         margin-top: 20px;
         gap: 5px;
@@ -254,16 +272,24 @@ margin-left: 350px;
     .auth-buttons a {
         margin:5px;
     }
+
+    .auth-buttons.active {
+        display: flex; 
+      }
+      .nav.active{
+        display: grid;
+      }
+
     .features .feature-item{
         width: 90%;
     }
     .hero p {
-        font-size: 13px;
+        font-size: 14px;
         margin-bottom: 12px;
-        width: 100px;
+        width: 120px;
     }
     .hero h1{
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 20px;
     }
     .lines img{
